@@ -1,0 +1,74 @@
+#clients {
+  padding: 150px 0 157px;
+  .clients-content {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    h2 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 57px;
+      letter-spacing: 0.2px;
+      color: #22343d;
+    }
+    span {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #22343d;
+    }
+  }
+  .clients-rows {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-top: 50px;
+    grid-column-gap: 64px;
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 50px;
+    }
+    .clients-row {
+      padding: 28px 26px 24px;
+      display: grid;
+      grid-row-gap: 16px;
+      background: #ffffff;
+      border: 1px solid #dedede;
+      border-radius: 5px;
+      .clients__row-content {
+        p {
+          max-width: 275px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          letter-spacing: 0.2px;
+          color: #737373;
+        }
+      }
+      .clients__row-about {
+        display: flex;
+        gap: 14px;
+        .clients__about-heading {
+          h4 {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            color: #02897a;
+          }
+          p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            color: #252b42;
+          }
+        }
+      }
+    }
+  }
+}
